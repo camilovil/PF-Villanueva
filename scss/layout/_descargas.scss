@@ -1,0 +1,78 @@
+//bienvenida descargas //
+.descargas-welcome {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px; // Espaciado interior arriba y abajo de la sección (60px) y a los costados (20px).
+
+    h1 {
+      font-size: 36px; // Tamaño de fuente del título
+      font-weight: 700; // Grosor de la fuente (negrita)
+      margin-bottom: 20px; // Margen inferior del título
+      color: #222; // Color del texto del título
+    }
+
+    p {
+      font-size: 18px; // Tamaño de fuente del párrafo
+      line-height: 1.5; // Altura de línea del párrafo
+      margin-bottom: 40px; // Margen inferior del párrafo
+      color: #555; // Color del texto del párrafo
+    }
+
+    &:before {
+    content: "";
+    display: block;
+      width: 50%; // Ancho de la línea horizontal debajo del texto
+      height: 3px; // Grosor de la línea horizontal
+      background-color: #f0d909ea; // Color de la línea horizontal
+      margin: 0 auto 40px auto; // Margen inferior de la línea horizontal
+    }
+}
+
+
+//seccion de galeria de descargas //
+.downloads-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); // establece el ancho de las columnas, con un mínimo de 250px y un máximo de 1fr
+    gap: 20px; // establece el espacio entre los elementos
+    
+    .gallery-item {
+    position: relative;
+    overflow: hidden;
+      border: 1px solid #08080800; // establece un borde gris claro
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // establece el tamaño y la posición de la imagen dentro del contenedor
+    }
+    
+    .download-button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: #0c0c0cea; // establece el color de fondo semitransparente del botón
+        color: #fff; // establece el color del texto del botón
+        border: #fff;
+        font-size: 16px;
+        text-align: center;
+        opacity: 0; // establece la opacidad del botón en 0 para que no sea visible por defecto
+        transition: opacity 0.3s ease-in-out; // establece una transición gradual de opacidad cuando el cursor se mueve sobre la imagen
+        
+        &:hover {
+        opacity: 1; // establece la opacidad del botón en 1 cuando el cursor se mueve sobre la imagen
+        }
+    }
+    
+    &:hover img {
+        transform: scale(1.1); // establece una transformación de escala cuando el cursor se mueve sobre la imagen
+    }
+    
+    &:hover .download-button {
+        opacity: 1; // establece la opacidad del botón en 1 cuando el cursor se mueve sobre la imagen
+    }
+    }
+}

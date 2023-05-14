@@ -1,0 +1,186 @@
+//seccion de bienvenida reviews //
+.reviews-welcome {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px; // Espaciado interior arriba y abajo de la sección (60px) y a los costados (20px).
+
+    h1 {
+      font-size: 36px; // Tamaño de fuente del título
+      font-weight: 700; // Grosor de la fuente (negrita)
+      margin-bottom: 20px; // Margen inferior del título
+      color: #222; // Color del texto del título
+    }
+
+    p {
+      font-size: 18px; // Tamaño de fuente del párrafo
+      line-height: 1.5; // Altura de línea del párrafo
+      margin-bottom: 40px; // Margen inferior del párrafo
+      color: #555; // Color del texto del párrafo
+    }
+
+    &:before {
+    content: "";
+    display: block;
+      width: 50%; // Ancho de la línea horizontal debajo del texto
+      height: 3px; // Grosor de la línea horizontal
+      background-color: #078080; // Color de la línea horizontal
+      margin: 0 auto 40px auto; // Margen inferior de la línea horizontal
+    }
+}
+
+//seccion contenido //
+
+//seccion contenido //
+
+.reviews1-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.reviews1-container {
+    article {
+        background-color: #078080;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            color:#232323;
+            margin: 10px;
+        }
+
+        p {
+            color: #232323;
+            margin: 10px;
+        }
+
+        a {
+            display: block;
+            background-color: #232323;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #f45d48;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h3,
+        p {
+            margin: 10px;
+        }
+
+        a {
+            margin-top: auto;
+            margin-bottom: 10px;
+            padding: 7px 5px;
+        }
+    }
+}
+
+.reviews2-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.reviews2-container {
+    article {
+        background-color: #078080b6;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        h3 {
+            color:#232323;
+            margin: 10px;
+        }
+
+        p {
+            color: #0d0d0d;
+            margin: 10px;
+        }
+
+        a {
+            display: block;
+            background-color: #232323;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 5px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: #fcfcfc;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        h3,
+        p {
+            margin: 10px;
+        }
+
+        a {
+            margin-top: auto;
+            margin-bottom: 10px;
+            padding: 7px 5px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/* Estilos de la sección de contacto */
+
+#contacto {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 50px 0; /* Espacio interno */
+    box-shadow: 0 0 5px #ddd; /* Sombra en los bordes del formulario */
+    
+    h2 {
+      font-size: 36px; /* Tamaño del título */
+      font-weight: bold; /* Peso del título */
+      text-align: center; /* Alineación del título */
+      margin-bottom: 40px; /* Margen inferior del título */
+    }
+    
+    form {
+      max-width: 600px; /* Ancho máximo del formulario */
+      margin: 0 auto; /* Centrar el formulario horizontalmente */
+    
+    label {
+        font-size: 18px; /* Tamaño de la etiqueta */
+        font-weight: bold; /* Peso de la etiqueta */
+    }
+    
+    input,
+    textarea {
+        padding: 12px; /* Espacio interno del campo */
+        font-size: 16px; /* Tamaño del texto del campo */
+        border: 2px solid #f0d909ea; /* Borde del campo */
+        border-radius: 4px; 
+        width: 100%; 
+        margin-bottom: 20px; 
+        box-shadow: 0 0 5px #ddd; 
+        
+        &:focus {
+            border-color: #f0d909ea; 
+            box-shadow: 0 0 5px #f0d909ea; 
+        }
+    }
+    
+    textarea {
+        height: 150px; 
+    }
+    
+    button[type="submit"] {
+        background-color: #d9c300; 
+        color: #fff; 
+        border: none; 
+        padding: 12px 24px; 
+        font-size: 18px; 
+        border-radius: 4px; 
+        cursor: pointer; 
+        
+        &:hover {
+          background-color: #f5e12a; 
+        }
+    }
+    }
+}

@@ -1,0 +1,94 @@
+//seccion bienvenida about //
+.titulo-sobre-nosotros {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #222;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100%; 
+        height: 3px; 
+        background-color: #f0d909ea; 
+        margin: 0 auto 40px auto; 
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    .sobre-nosotros-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 1.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            padding: 0.5rem; 
+        }
+    }
+
+    .boton-contacto-sobre-nosotros {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        border: 2px solid #000;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #000;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .sobre-nosotros-container {
+            padding: 1rem;
+        }
+
+        .boton-contacto-sobre-nosotros {
+            width: 100%;
+            font-size: 1rem;
+        }
+    }
+}
+
+.boton-contacto-about {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    background-color: #f0d909ea;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+        background: #eaee0a;
+        border-color: #eaee0a; 
+        color: #ffffff;
+    }
+}
